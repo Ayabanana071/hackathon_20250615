@@ -9,7 +9,7 @@ gem 'rails', '~> 8.0.2'
 gem 'sprockets-rails'
 
 # install template-engine
-gem 'slim-rails' >= 3.1.3
+gem 'slim-rails' '>= 3.1.3'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
