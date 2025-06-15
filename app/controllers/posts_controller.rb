@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show]
   def index
-    @posts = Post.all
+    @posts = Post.order(id: :desc)
   end
 
   def show; end
