@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show]
   def index
-    @posts = Post.includes(:user).order(id: :desc)
+    @q = Post.ransack(params[:q])
+    @posts = @q.result(distinct: true).includes.order(created_at: :desc).page(params[:page]).per(10)
   end
 
   def show; end
