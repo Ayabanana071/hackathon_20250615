@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to @post, notice: '投稿を作成しました'
+      redirect_to @post, notice: I18n.t('posts.created')
     else
       render :new, status: :unprocessable_entity
     end
@@ -32,6 +32,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:content)
+    params.expect(post: [:content])
   end
 end

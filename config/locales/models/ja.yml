@@ -5,3 +5,5 @@ ja:
     attributes:
       post:
         content: 内容
+  posts:
+    created: "投稿を作成しました"
