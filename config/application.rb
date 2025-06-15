@@ -18,7 +18,7 @@ module RailsTemplate
 
     config.i18n.default_locale = :ja
     config.i18n.available_locales = [:ja, :en]
-    
+
 
     # Configuration for the application, engines, and railties goes here.
     #
