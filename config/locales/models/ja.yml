@@ -1,0 +1,8 @@
+ja:
+  activerecord:
+    models:
+      admin: 管理者
+      user: ユーザー
+    attributes:
+      post:
+        content: 内容
