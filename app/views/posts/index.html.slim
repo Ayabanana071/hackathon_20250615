@@ -14,8 +14,10 @@ hr.mb-3
 
 #posts
   - @posts.each do |post|
-    == render post
-    .mx-3.mx-md-5.mb-3= link_to "詳細を見る", post_path(post), class: 'btn btn-primary'
+    .mx-3.mx-md-5
+      = render post
+      .mb-3
+        = link_to "詳細を見る", post_path(post), class: 'btn btn-primary'
 
   - if @posts.empty?
     .alert.alert-info 投稿がまだありません。最初の投稿を作成してみましょう！
