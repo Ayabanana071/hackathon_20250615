@@ -1,0 +1,6 @@
+.card.mb-3
+  .card-body
+    .card-text
+      = simple_format(post.content)
+    .text-muted.small
+      span 投稿日時: #{l post.created_at, format: :long}
