@@ -4,3 +4,6 @@
       = simple_format(post.content)
     .text-muted.small
       span 投稿日時: #{l post.created_at, format: :long}
+      .d-flex.align-items-center
+        span 投稿者: #{post.user.name}
+
