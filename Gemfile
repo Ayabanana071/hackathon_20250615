@@ -18,6 +18,7 @@ gem 'mysql2'
 gem 'puma', '>= 5.0'
 
 gem 'ransack'
+gem 'kaminari'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
