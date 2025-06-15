@@ -4,7 +4,7 @@ h1 投稿一覧
 #posts
   - @posts.each do |post|
     == render post
-    = link_to "詳細を見る", post_path(post), class: 'btn btn-primary'
+    .mb-5= link_to "詳細を見る", post_path(post), class: 'btn btn-primary'
 
   - if @posts.empty?
     .alert.alert-info 投稿がまだありません。最初の投稿を作成してみましょう！
