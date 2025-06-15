@@ -17,9 +17,9 @@ gem 'mysql2'
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '>= 5.0'
 
-gem 'ransack'
-gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
+gem 'kaminari'
+gem 'ransack'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'

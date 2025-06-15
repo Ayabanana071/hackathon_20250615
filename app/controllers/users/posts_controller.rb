@@ -5,6 +5,8 @@ class Users::PostsController < Users::ApplicationController
     @post = Post.new
   end
 
+  def edit; end
+
   def create
     @post = current_user.posts.build(post_params)
 
@@ -14,8 +16,6 @@ class Users::PostsController < Users::ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
-
-  def edit; end
 
   def update
     if @post.update(post_params)
