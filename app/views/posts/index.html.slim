@@ -1,5 +1,6 @@
 h1 投稿一覧
-.text-end.mb-3= link_to "投稿を作成", new_post_path, class: 'btn btn-primary'
+- if user_signed_in?
+  .text-end.mb-3= link_to "投稿を作成", new_users_post_path, class: 'btn btn-primary'
 
 #posts
   - @posts.each do |post|

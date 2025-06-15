@@ -6,7 +6,7 @@ class Users::PostsController < Users::ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
 
     if @post.save
       redirect_to @post, notice: '投稿を作成しました'
